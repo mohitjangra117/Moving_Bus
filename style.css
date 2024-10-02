@@ -1,0 +1,137 @@
+body{
+    background-color: aquamarine;
+}
+
+
+.body{
+    position:relative;
+    width:200px;
+    height:80px;
+    background-color: white;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    animation-name: move;
+    animation-duration: 10s;
+  
+       
+
+}
+
+
+.ftyre{
+    position:relative;
+     width:40px;
+     height: 40px;
+     background-color: black;
+     border-radius: 50%;
+     top:-20px;
+     left:140px;
+     animation-name:ftm ;
+     animation-duration: 1s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+}
+
+
+.rim{
+    background-color: silver;
+    width: 10px;
+    height:10px;
+   position: absolute;
+   left:1px;
+   z-index: 2;
+   top:17px;
+   border-radius: 50%;
+}
+
+
+.btyre{
+
+    position:relative;
+     width:40px;
+     height: 40px;
+     background-color: black;
+     border-radius: 50%;
+     top:-60px;
+     left:20px;
+     animation-name:ftm ;
+     animation-duration: 1s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+}
+.road{
+    background-color: rgb(173, 173, 175);
+    width: 100%;
+    height:40px;
+    position: absolute;
+    top:100px;
+    z-index: -1;
+}
+
+@keyframes ftm{
+0%{
+transform: rotate(0deg);
+}
+100%{
+    transform: rotate(360deg);
+}
+
+}
+
+.main{
+
+    display: flex;
+}
+
+.car{
+ 
+
+   animation-name: move;
+   animation-duration: 40s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+
+
+}
+
+@keyframes move{
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(1200px);
+    }
+}
+
+.l1{
+    position:relative;
+    width:10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    top:-60px;
+    left:20px;
+    animation-name: col;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    border: 1px solid black;
+    
+}
+.ll{
+    display: flex;
+    gap: 10px;
+}
+
+@keyframes col{
+    0% { background-color: #FF5733; }
+    10% { background-color: #FFBD33; }
+    20% { background-color: #FFFC33; }
+    30% { background-color: #33FF57; }
+    40% { background-color: #33FFF6; }
+    50% { background-color: #335CFF; }
+    60% { background-color: #6C33FF; }
+    70% { background-color: #FF33B8; }
+    80% { background-color: #FF33A1; }
+    90% { background-color: #FF3333; }
+    100% { background-color: #FF5733; }
+}
